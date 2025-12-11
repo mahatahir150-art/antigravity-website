@@ -6,6 +6,7 @@ export interface Listing {
     lat: number;
     lng: number;
     category: string;
+    status?: 'active' | 'pending' | 'rejected'; // Added for Admin M4
 }
 
 export const DUMMY_LISTINGS: Listing[] = [
